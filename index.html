@@ -1,412 +1,550 @@
 <!-- index.html -->
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
-  <canvas id="c"></canvas>
+  <body>
+    <canvas id="c"></canvas>
 
-  <header>
-    <h2 class="logo">
-      <a href="#home"><span>D</span>ima <span>V</span>olfvski <span>V</span>oronov</a>
-    </h2>
+    <header>
+      <h2 class="logo">
+        <a href="#home"
+          ><span>D</span>ima <span>V</span>olfvski <span>V</span>oronov</a
+        >
+      </h2>
 
-    <nav>
-      <a href="#home" class="is-active">Home</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact Me</a>
-    </nav>
+      <nav>
+        <a href="#home" class="is-active">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact Me</a>
+      </nav>
 
-    <a class="project-link" href="cv.pdf" download>Download CV</a>
-  </header>
+      <a class="project-link" href="cv.pdf" download>Download CV</a>
+    </header>
 
-  <main class="snap">
-    <section class="panel hero is-active" id="home">
-      <div class="hero-content">
-        <div class="typewrap play" id="typewrap">
-          <span class="line line1">Nice to meet you!</span>
-          <span class="line line2">I'm Dima Volfvski Voronov — welcome to my portfolio.</span>
+    <main class="snap">
+      <section class="panel hero is-active" id="home">
+        <div class="hero-content">
+          <div class="typewrap play" id="typewrap">
+            <span class="line line1">Nice to meet you!</span>
+            <span class="line line2"
+              >I'm Dima Volfvski Voronov — welcome to my portfolio.</span
+            >
+          </div>
+
+          <p class="subtitle">
+            I’m currently working as an <strong>Automation Team Lead</strong> at
+            <strong>Matrix Group</strong>, in
+            <strong>Mizrahi-Tefahot Bank</strong>. I specialize in building
+            CI/CD pipelines and test automation infrastructure, and I’m actively
+            seeking a <strong>Software Developer</strong> opportunity.
+          </p>
+
+          <ul class="about-myself">
+            <li>Recognized for leadership and strong problem-solving skills</li>
+            <li>Highly curious and passionate about computer science</li>
+            <li>
+              B.Sc. in Computer Science from Holon Institute of Technology
+            </li>
+          </ul>
+
+          <p class="experience">
+            <strong>Work experience:</strong><br />
+            • 8-month college internship developing a data science project for
+            an Italian company <br />
+            • 1 year at Matrix Group — Automation Developer at Philips<br />
+            • 1 year at Matrix Group — Automation Developer at Mizrahi-Tefahot
+            Bank (4 months Team Lead role)
+          </p>
         </div>
+      </section>
 
-        <p class="subtitle">
-          I’m currently working as an <strong>Automation Team Lead</strong> at <strong>Matrix Group</strong>, in
-          <strong>Mizrahi-Tefahot Bank</strong>. I specialize in building CI/CD pipelines and test automation
-          infrastructure, and I’m actively seeking a <strong>Software Developer</strong> opportunity.
-        </p>
-
-        <ul class="about-myself">
-          <li>Recognized for leadership and strong problem-solving skills</li>
-          <li>Highly curious and passionate about computer science</li>
-          <li>B.Sc. in Computer Science from Holon Institute of Technology</li>
+      <section class="panel" id="skills">
+        <h1 class="title">My skill set:</h1>
+        <ul class="skill-list">
+          <li>TypeScript</li>
+          <li>C#</li>
+          <li>Java</li>
+          <li>Python</li>
+          <li>Kotlin</li>
+          <li>C / C++</li>
+          <li>Docker</li>
+          <li>Jenkins</li>
+          <li>Bash</li>
+          <li>.NET</li>
+          <li>WinForms</li>
+          <li>FastAPI</li>
+          <li>SQL</li>
+          <li>React & React Native</li>
+          <li>Angular</li>
+          <li>REST APIs</li>
+          <li>Playwright</li>
+          <li>Appium</li>
+          <li>SpecFlow</li>
+          <li>MongoDB</li>
+          <li>Jetpack Compose</li>
+          <li>Git / Bitbucket</li>
+          <li>Multithreading & Mutexes</li>
+          <li>Data Structures</li>
         </ul>
+      </section>
 
-        <p class="experience">
-          <strong>Work experience:</strong><br>
-          • 8-month college internship developing a data science project for an Italian company <br>
-          • 1 year at Matrix Group — Automation Developer at Philips<br>
-          • 1 year at Matrix Group — Automation Developer at Mizrahi-Tefahot Bank (4 months Team Lead role)
-        </p>
-      </div>
-    </section>
+      <section class="panel" id="projects">
+        <h1 class="title">Projects:</h1>
 
-    <section class="panel" id="skills">
-      <h1 class="title">My skill set:</h1>
-      <ul class="skill-list">
-        <li>TypeScript</li><li>C#</li><li>Java</li><li>Python</li><li>Kotlin</li><li>C / C++</li>
-        <li>Docker</li><li>Jenkins</li><li>Bash</li><li>.NET</li><li>WinForms</li><li>FastAPI</li>
-        <li>SQL</li><li>React & React Native</li><li>Angular</li><li>REST APIs</li><li>Playwright</li>
-        <li>Appium</li><li>SpecFlow</li><li>MongoDB</li><li>Jetpack Compose</li><li>Git / Bitbucket</li>
-        <li>Multithreading & Mutexes</li><li>Data Structures</li>
-      </ul>
-    </section>
-
-    <section class="panel" id="projects">
-      <h1 class="title">Projects:</h1>
-
-      <div class="projects-row">
-        <div class="project-card">
-          <div class="project-header">
-            <h1 class="project-title">MyControlApp</h1>
-            <div class="project-tags">
-              <span class="tag">Kotlin</span><span class="tag">Docker</span><span class="tag">Shell</span><span class="tag">TypeScript</span>
+        <div class="projects-row">
+          <div class="project-card">
+            <div class="project-header">
+              <h1 class="project-title">WebTradeTracker</h1>
+              <div class="project-tags">
+                <span class="tag">.NET</span>
+                <span class="tag">NestJS</span>
+                <span class="tag">React</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Docker</span>
+              </div>
             </div>
+            <p class="project-desc">
+              Built a full-stack trade tracking platform with a
+              microservices-style architecture using a .NET backend and NestJS
+              BFF. Implemented secure JWT authentication, stock management APIs,
+              and a React frontend with Redux state management. Integrated
+              Docker-based environments and structured logging for scalable
+              development and testing workflows.
+            </p>
+            <a
+              class="project-link"
+              href="https://github.com/Dimavo42/WebTradeTracker"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View on GitHub
+            </a>
           </div>
-          <p class="project-desc">
-            Developed an IDF division scheduling management app for yearly, monthly, and daily planning with group-based
-            assignments and auto-scheduling based on historical data. Built a CI/CD pipeline with GitHub Actions and Docker.
-          </p>
-          <a class="project-link" href="https://github.com/Dimavo42/MyControlApp" target="_blank" rel="noreferrer">
-            View on GitHub
-          </a>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <h1 class="project-title">MyApartments</h1>
-            <div class="project-tags">
-              <span class="tag">React</span><span class="tag">Python</span><span class="tag">MongoDB</span><span class="tag">Docker</span>
+          <div class="project-card">
+            <div class="project-header">
+              <h1 class="project-title">MyControlApp</h1>
+              <div class="project-tags">
+                <span class="tag">Kotlin</span><span class="tag">Docker</span
+                ><span class="tag">Shell</span
+                ><span class="tag">TypeScript</span>
+              </div>
             </div>
+            <p class="project-desc">
+              Developed an IDF division scheduling management app for yearly,
+              monthly, and daily planning with group-based assignments and
+              auto-scheduling based on historical data. Built a CI/CD pipeline
+              with GitHub Actions and Docker.
+            </p>
+            <a
+              class="project-link"
+              href="https://github.com/Dimavo42/MyControlApp"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View on GitHub
+            </a>
           </div>
-          <p class="project-desc">
-            App that scrapes apartment listings from Yad2, stores the data in MongoDB, and presents it via a React UI and a
-            FastAPI backend, deployed using Docker Compose.
-          </p>
-          <a class="project-link" href="https://github.com/Dimavo42/scraping-yad2-and-deploy" target="_blank" rel="noreferrer">
-            View on GitHub
-          </a>
-        </div>
 
-        <div class="project-card">
-          <div class="project-header">
-            <h1 class="project-title">MenuOptimization</h1>
-            <div class="project-tags">
-              <span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Matplotlib</span><span class="tag">Numpy</span>
+          <div class="project-card">
+            <div class="project-header">
+              <h1 class="project-title">MyApartments</h1>
+              <div class="project-tags">
+                <span class="tag">React</span><span class="tag">Python</span
+                ><span class="tag">MongoDB</span><span class="tag">Docker</span>
+              </div>
             </div>
+            <p class="project-desc">
+              App that scrapes apartment listings from Yad2, stores the data in
+              MongoDB, and presents it via a React UI and a FastAPI backend,
+              deployed using Docker Compose.
+            </p>
+            <a
+              class="project-link"
+              href="https://github.com/Dimavo42/scraping-yad2-and-deploy"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View on GitHub
+            </a>
           </div>
-          <p class="project-desc">
-            College internship project in collaboration with an Italian company, where we optimized their algorithm to identify
-            the best-selling items.
-          </p>
-          <a class="project-link" href="https://github.com/IgalKF/Academy.DataScience.MenuOptimization" target="_blank" rel="noreferrer">
-            View on GitHub
-          </a>
-        </div>
 
-        <div class="project-card">
-          <div class="project-header">
-            <h1 class="project-title">Facebook Management</h1>
-            <div class="project-tags">
-              <span class="tag">C#</span>
+          <div class="project-card">
+            <div class="project-header">
+              <h1 class="project-title">MenuOptimization</h1>
+              <div class="project-tags">
+                <span class="tag">Python</span><span class="tag">Pandas</span
+                ><span class="tag">Matplotlib</span
+                ><span class="tag">Numpy</span>
+              </div>
             </div>
+            <p class="project-desc">
+              College internship project in collaboration with an Italian
+              company, where we optimized their algorithm to identify the
+              best-selling items.
+            </p>
+            <a
+              class="project-link"
+              href="https://github.com/IgalKF/Academy.DataScience.MenuOptimization"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View on GitHub
+            </a>
           </div>
-          <p class="project-desc">
-            Developed a user management application using WinForms C#, Facebook API, and design patterns to enhance maintainability.
-          </p>
-          <a class="project-link" href="https://github.com/Dimavo42/Facebook_App" target="_blank" rel="noreferrer">
-            View on GitHub
-          </a>
-        </div>
 
-        <div class="project-card">
-          <div class="project-header">
-            <h1 class="project-title">xParty</h1>
-            <div class="project-tags">
-              <span class="tag">Kotlin</span><span class="tag">Firebase</span>
+          <div class="project-card">
+            <div class="project-header">
+              <h1 class="project-title">Facebook Management</h1>
+              <div class="project-tags">
+                <span class="tag">C#</span>
+              </div>
             </div>
+            <p class="project-desc">
+              Developed a user management application using WinForms C#,
+              Facebook API, and design patterns to enhance maintainability.
+            </p>
+            <a
+              class="project-link"
+              href="https://github.com/Dimavo42/Facebook_App"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View on GitHub
+            </a>
           </div>
-          <p class="project-desc">
-            Built an interactive map using osmdroid maps API & Firebase in Kotlin for event visualization.
+
+          <div class="project-card">
+            <div class="project-header">
+              <h1 class="project-title">xParty</h1>
+              <div class="project-tags">
+                <span class="tag">Kotlin</span><span class="tag">Firebase</span>
+              </div>
+            </div>
+            <p class="project-desc">
+              Built an interactive map using osmdroid maps API & Firebase in
+              Kotlin for event visualization.
+            </p>
+            <a
+              class="project-link"
+              href="https://github.com/danielgeo96/Xparty"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View on GitHub
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="contact">
+        <div class="contact-card">
+          <h1 class="section-title">Contact Me</h1>
+          <p class="contact-subtitle">
+            Feel free to reach out — I’m open to collaborations and new
+            opportunities.
           </p>
-          <a class="project-link" href="https://github.com/danielgeo96/Xparty" target="_blank" rel="noreferrer">
-            View on GitHub
-          </a>
+
+          <div class="contact-actions">
+            <a class="contact-btn" href="mailto:dimavoronov95work@gmail.com"
+              >Email</a
+            >
+            <a
+              class="contact-btn"
+              href="https://www.linkedin.com/in/Dima-Vornov/"
+              target="_blank"
+              rel="noreferrer"
+              >LinkedIn</a
+            >
+            <a
+              class="contact-btn"
+              href="https://github.com/Dimavo42"
+              target="_blank"
+              rel="noreferrer"
+              >GitHub</a
+            >
+          </div>
+
+          <div class="contact-info">
+            <p><strong>Email:</strong> dimavoronov95work@gmail.com</p>
+            <p><strong>Location:</strong> Israel</p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <section class="panel" id="contact">
-      <div class="contact-card">
-        <h1 class="section-title">Contact Me</h1>
-        <p class="contact-subtitle">Feel free to reach out — I’m open to collaborations and new opportunities.</p>
+    <script>
+      const panels = Array.from(document.querySelectorAll(".panel"));
+      const navLinks = Array.from(document.querySelectorAll("header nav a"));
 
-        <div class="contact-actions">
-          <a class="contact-btn" href="mailto:dimavoronov95work@gmail.com">Email</a>
-          <a class="contact-btn" href="https://www.linkedin.com/in/Dima-Vornov/" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a class="contact-btn" href="https://github.com/Dimavo42" target="_blank" rel="noreferrer">GitHub</a>
-        </div>
-
-        <div class="contact-info">
-          <p><strong>Email:</strong> dimavoronov95work@gmail.com</p>
-          <p><strong>Location:</strong> Israel</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- 1) ACTIVE NAV + PANEL -->
-  <script>
-    const panels = Array.from(document.querySelectorAll(".panel"));
-    const navLinks = Array.from(document.querySelectorAll("header nav a"));
-
-    const setActive = (id) => {
-      panels.forEach(p => p.classList.toggle("is-active", p.id === id));
-      navLinks.forEach(a => a.classList.toggle("is-active", a.getAttribute("href") === `#${id}`));
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      const visible = entries.filter(e => e.isIntersecting);
-      if (!visible.length) return;
-      visible.sort((a, b) => b.intersectionRatio - a.intersectionRatio);
-      setActive(visible[0].target.id);
-    }, {
-      threshold: [0.25, 0.4, 0.55, 0.7],
-      rootMargin: "-80px 0px -40% 0px"
-    });
-
-    panels.forEach(p => observer.observe(p));
-  </script>
-
-  <!-- 2) RESTART HOME TYPING (RELIABLE) -->
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const home = document.getElementById("home");
-      const typewrap = document.getElementById("typewrap");
-      const homeLink = document.querySelector('header nav a[href="#home"]');
-
-      if (!home || !typewrap) return;
-
-      const replayTyping = () => {
-        typewrap.classList.remove("play");
-        void typewrap.offsetWidth; // reflow
-        typewrap.classList.add("play");
+      const setActive = (id) => {
+        panels.forEach((p) => p.classList.toggle("is-active", p.id === id));
+        navLinks.forEach((a) =>
+          a.classList.toggle("is-active", a.getAttribute("href") === `#${id}`),
+        );
       };
 
-      // play on first load
-      replayTyping();
+      const observer = new IntersectionObserver(
+        (entries) => {
+          const visible = entries.filter((e) => e.isIntersecting);
+          if (!visible.length) return;
+          visible.sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+          setActive(visible[0].target.id);
+        },
+        {
+          threshold: [0.25, 0.4, 0.55, 0.7],
+          rootMargin: "-80px 0px -40% 0px",
+        },
+      );
 
-      // replay when clicking Home (even if already on Home)
-      homeLink?.addEventListener("click", () => setTimeout(replayTyping, 60));
+      panels.forEach((p) => observer.observe(p));
+    </script>
 
-      // replay when you LEAVE home and then COME BACK (scroll)
-      let wasInView = false;
-      const obs = new IntersectionObserver(([entry]) => {
-        const now = entry.isIntersecting;
-        if (now && !wasInView) replayTyping();
-        wasInView = now;
-      }, { threshold: 0.65, rootMargin: "-80px 0px -40% 0px" });
+    <!-- 2) RESTART HOME TYPING (RELIABLE) -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const home = document.getElementById("home");
+        const typewrap = document.getElementById("typewrap");
+        const homeLink = document.querySelector('header nav a[href="#home"]');
 
-      obs.observe(home);
-    });
-  </script>
+        if (!home || !typewrap) return;
 
-  <!-- 3) CANVAS BACKGROUND (YOUR ORIGINAL, UNCHANGED LOGIC) -->
-  <script>
-    window.addEventListener("DOMContentLoaded", () => {
-      const c = document.getElementById("c");
-      const ctx = c.getContext("2d");
+        const replayTyping = () => {
+          typewrap.classList.remove("play");
+          void typewrap.offsetWidth; // reflow
+          typewrap.classList.add("play");
+        };
 
-      const opts = {
-        len: 20,
-        count: 70,
-        baseTime: 10,
-        addedTime: 10,
-        dieChance: 0.05,
-        sparkChance: 0.06,
-        sparkDist: 10,
-        sparkSize: 2,
-        color: "hsl(hue,100%,light%)",
-        baseLight: 50,
-        addedLight: 10,
-        shadowToTimePropMult: 6,
-        baseLightInputMultiplier: 0.01,
-        addedLightInputMultiplier: 0.02,
-        cx: window.innerWidth / 2,
-        cy: window.innerHeight / 2,
-        repaintAlpha: 0.04,
-        hueChange: 0.1,
-      };
+        // play on first load
+        replayTyping();
 
-      let tick = 0;
-      const lines = [];
-      const baseRad = (Math.PI * 2) / 6;
+        // replay when clicking Home (even if already on Home)
+        homeLink?.addEventListener("click", () => setTimeout(replayTyping, 60));
 
-      let dieX = window.innerWidth / 2 / opts.len;
-      let dieY = window.innerHeight / 2 / opts.len;
+        // replay when you LEAVE home and then COME BACK (scroll)
+        let wasInView = false;
+        const obs = new IntersectionObserver(
+          ([entry]) => {
+            const now = entry.isIntersecting;
+            if (now && !wasInView) replayTyping();
+            wasInView = now;
+          },
+          { threshold: 0.65, rootMargin: "-80px 0px -40% 0px" },
+        );
 
-      function resize() {
-        c.width = window.innerWidth;
-        c.height = window.innerHeight;
-        opts.cx = c.width / 2;
-        opts.cy = c.height / 2;
-        dieX = c.width / 2 / opts.len;
-        dieY = c.height / 2 / opts.len;
-        ctx.fillStyle = "black";
-        ctx.fillRect(0, 0, c.width, c.height);
-      }
-      resize();
-      window.addEventListener("resize", resize);
-
-      const MAX_POINTS = 5;
-      const points = [];
-      const radiuses = [60, 120, 180, 240, 320];
-      let radiusIndex = 0;
-
-      function addPoint(x, y) {
-        const r = radiuses[radiusIndex % radiuses.length];
-        radiusIndex++;
-        if (points.length >= MAX_POINTS) points.shift();
-        points.push({ x, y, r });
-      }
-
-      window.addEventListener("pointerenter", (e) => addPoint(e.clientX, e.clientY));
-      window.addEventListener("click", (e) => addPoint(e.clientX, e.clientY));
-
-      let lastPointTime = 0;
-      const ADD_POINT_EVERY_MS = 120;
-      window.addEventListener("pointermove", (e) => {
-        const now = performance.now();
-        if (now - lastPointTime < ADD_POINT_EVERY_MS) return;
-        lastPointTime = now;
-        addPoint(e.clientX, e.clientY);
+        obs.observe(home);
       });
+    </script>
 
-      function randomInsideRadius(p) {
-        const a = Math.random() * Math.PI * 2;
-        const rr = Math.sqrt(Math.random()) * p.r;
-        return { x: p.x + Math.cos(a) * rr, y: p.y + Math.sin(a) * rr };
-      }
+    <!-- 3) CANVAS BACKGROUND (YOUR ORIGINAL, UNCHANGED LOGIC) -->
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const c = document.getElementById("c");
+        const ctx = c.getContext("2d");
 
-      function Line(anchorX, anchorY) {
-        this.anchorX = anchorX != null ? anchorX : opts.cx;
-        this.anchorY = anchorY != null ? anchorY : opts.cy;
-        this.reset();
-      }
+        const opts = {
+          len: 20,
+          count: 70,
+          baseTime: 10,
+          addedTime: 10,
+          dieChance: 0.05,
+          sparkChance: 0.06,
+          sparkDist: 10,
+          sparkSize: 2,
+          color: "hsl(hue,100%,light%)",
+          baseLight: 50,
+          addedLight: 10,
+          shadowToTimePropMult: 6,
+          baseLightInputMultiplier: 0.01,
+          addedLightInputMultiplier: 0.02,
+          cx: window.innerWidth / 2,
+          cy: window.innerHeight / 2,
+          repaintAlpha: 0.04,
+          hueChange: 0.1,
+        };
 
-      Line.prototype.reset = function () {
-        this.x = 0; this.y = 0;
-        this.addedX = 0; this.addedY = 0;
-        this.rad = 0;
+        let tick = 0;
+        const lines = [];
+        const baseRad = (Math.PI * 2) / 6;
 
-        this.lightInputMultiplier =
-          opts.baseLightInputMultiplier +
-          opts.addedLightInputMultiplier * Math.random();
+        let dieX = window.innerWidth / 2 / opts.len;
+        let dieY = window.innerHeight / 2 / opts.len;
 
-        this.color = opts.color.replace("hue", tick * opts.hueChange);
-        this.cumulativeTime = 0;
-        this.beginPhase();
-      };
+        function resize() {
+          c.width = window.innerWidth;
+          c.height = window.innerHeight;
+          opts.cx = c.width / 2;
+          opts.cy = c.height / 2;
+          dieX = c.width / 2 / opts.len;
+          dieY = c.height / 2 / opts.len;
+          ctx.fillStyle = "black";
+          ctx.fillRect(0, 0, c.width, c.height);
+        }
+        resize();
+        window.addEventListener("resize", resize);
 
-      Line.prototype.beginPhase = function () {
-        this.x += this.addedX;
-        this.y += this.addedY;
+        const MAX_POINTS = 5;
+        const points = [];
+        const radiuses = [60, 120, 180, 240, 320];
+        let radiusIndex = 0;
 
-        this.time = 0;
-        this.targetTime = (opts.baseTime + opts.addedTime * Math.random()) | 0;
+        function addPoint(x, y) {
+          const r = radiuses[radiusIndex % radiuses.length];
+          radiusIndex++;
+          if (points.length >= MAX_POINTS) points.shift();
+          points.push({ x, y, r });
+        }
 
-        this.rad += baseRad * (Math.random() < 0.5 ? 1 : -1);
-        this.addedX = Math.cos(this.rad);
-        this.addedY = Math.sin(this.rad);
+        window.addEventListener("pointerenter", (e) =>
+          addPoint(e.clientX, e.clientY),
+        );
+        window.addEventListener("click", (e) => addPoint(e.clientX, e.clientY));
 
-        if (
-          Math.random() < opts.dieChance ||
-          this.x > dieX || this.x < -dieX ||
-          this.y > dieY || this.y < -dieY
-        ) {
-          this.x = 0; this.y = 0;
-          this.addedX = 0; this.addedY = 0;
+        let lastPointTime = 0;
+        const ADD_POINT_EVERY_MS = 120;
+        window.addEventListener("pointermove", (e) => {
+          const now = performance.now();
+          if (now - lastPointTime < ADD_POINT_EVERY_MS) return;
+          lastPointTime = now;
+          addPoint(e.clientX, e.clientY);
+        });
+
+        function randomInsideRadius(p) {
+          const a = Math.random() * Math.PI * 2;
+          const rr = Math.sqrt(Math.random()) * p.r;
+          return { x: p.x + Math.cos(a) * rr, y: p.y + Math.sin(a) * rr };
+        }
+
+        function Line(anchorX, anchorY) {
+          this.anchorX = anchorX != null ? anchorX : opts.cx;
+          this.anchorY = anchorY != null ? anchorY : opts.cy;
+          this.reset();
+        }
+
+        Line.prototype.reset = function () {
+          this.x = 0;
+          this.y = 0;
+          this.addedX = 0;
+          this.addedY = 0;
           this.rad = 0;
+
+          this.lightInputMultiplier =
+            opts.baseLightInputMultiplier +
+            opts.addedLightInputMultiplier * Math.random();
+
+          this.color = opts.color.replace("hue", tick * opts.hueChange);
           this.cumulativeTime = 0;
-        }
-      };
+          this.beginPhase();
+        };
 
-      Line.prototype.step = function () {
-        ++this.time;
-        ++this.cumulativeTime;
+        Line.prototype.beginPhase = function () {
+          this.x += this.addedX;
+          this.y += this.addedY;
 
-        if (this.time >= this.targetTime) this.beginPhase();
+          this.time = 0;
+          this.targetTime =
+            (opts.baseTime + opts.addedTime * Math.random()) | 0;
 
-        const prop = this.time / this.targetTime;
-        const wave = Math.sin((prop * Math.PI) / 2);
-        const x = this.addedX * wave;
-        const y = this.addedY * wave;
+          this.rad += baseRad * (Math.random() < 0.5 ? 1 : -1);
+          this.addedX = Math.cos(this.rad);
+          this.addedY = Math.sin(this.rad);
 
-        ctx.shadowBlur = prop * opts.shadowToTimePropMult;
-        ctx.fillStyle = ctx.shadowColor = this.color.replace(
-          "light",
-          opts.baseLight + opts.addedLight * Math.sin(this.cumulativeTime * this.lightInputMultiplier)
-        );
-
-        ctx.fillRect(
-          this.anchorX + (this.x + x) * opts.len,
-          this.anchorY + (this.y + y) * opts.len,
-          2, 2
-        );
-
-        if (Math.random() < opts.sparkChance) {
-          ctx.fillRect(
-            this.anchorX + (this.x + x) * opts.len +
-            Math.random() * opts.sparkDist * (Math.random() < 0.5 ? 1 : -1) - opts.sparkSize / 2,
-            this.anchorY + (this.y + y) * opts.len +
-            Math.random() * opts.sparkDist * (Math.random() < 0.5 ? 1 : -1) - opts.sparkSize / 2,
-            opts.sparkSize, opts.sparkSize
-          );
-        }
-      };
-
-      function loop() {
-        requestAnimationFrame(loop);
-        ++tick;
-
-        ctx.globalCompositeOperation = "source-over";
-        ctx.shadowBlur = 0;
-        ctx.fillStyle = `rgba(0,0,0,${opts.repaintAlpha})`;
-        ctx.fillRect(0, 0, c.width, c.height);
-
-        ctx.globalCompositeOperation = "lighter";
-
-        const SPAWN_PER_FRAME = 2;
-        for (let i = 0; i < SPAWN_PER_FRAME; i++) {
-          if (points.length > 0) {
-            const p = points[(Math.random() * points.length) | 0];
-            const rp = randomInsideRadius(p);
-            lines.push(new Line(rp.x, rp.y));
-          } else {
-            lines.push(new Line());
+          if (
+            Math.random() < opts.dieChance ||
+            this.x > dieX ||
+            this.x < -dieX ||
+            this.y > dieY ||
+            this.y < -dieY
+          ) {
+            this.x = 0;
+            this.y = 0;
+            this.addedX = 0;
+            this.addedY = 0;
+            this.rad = 0;
+            this.cumulativeTime = 0;
           }
+        };
+
+        Line.prototype.step = function () {
+          ++this.time;
+          ++this.cumulativeTime;
+
+          if (this.time >= this.targetTime) this.beginPhase();
+
+          const prop = this.time / this.targetTime;
+          const wave = Math.sin((prop * Math.PI) / 2);
+          const x = this.addedX * wave;
+          const y = this.addedY * wave;
+
+          ctx.shadowBlur = prop * opts.shadowToTimePropMult;
+          ctx.fillStyle = ctx.shadowColor = this.color.replace(
+            "light",
+            opts.baseLight +
+              opts.addedLight *
+                Math.sin(this.cumulativeTime * this.lightInputMultiplier),
+          );
+
+          ctx.fillRect(
+            this.anchorX + (this.x + x) * opts.len,
+            this.anchorY + (this.y + y) * opts.len,
+            2,
+            2,
+          );
+
+          if (Math.random() < opts.sparkChance) {
+            ctx.fillRect(
+              this.anchorX +
+                (this.x + x) * opts.len +
+                Math.random() *
+                  opts.sparkDist *
+                  (Math.random() < 0.5 ? 1 : -1) -
+                opts.sparkSize / 2,
+              this.anchorY +
+                (this.y + y) * opts.len +
+                Math.random() *
+                  opts.sparkDist *
+                  (Math.random() < 0.5 ? 1 : -1) -
+                opts.sparkSize / 2,
+              opts.sparkSize,
+              opts.sparkSize,
+            );
+          }
+        };
+
+        function loop() {
+          requestAnimationFrame(loop);
+          ++tick;
+
+          ctx.globalCompositeOperation = "source-over";
+          ctx.shadowBlur = 0;
+          ctx.fillStyle = `rgba(0,0,0,${opts.repaintAlpha})`;
+          ctx.fillRect(0, 0, c.width, c.height);
+
+          ctx.globalCompositeOperation = "lighter";
+
+          const SPAWN_PER_FRAME = 2;
+          for (let i = 0; i < SPAWN_PER_FRAME; i++) {
+            if (points.length > 0) {
+              const p = points[(Math.random() * points.length) | 0];
+              const rp = randomInsideRadius(p);
+              lines.push(new Line(rp.x, rp.y));
+            } else {
+              lines.push(new Line());
+            }
+          }
+
+          while (lines.length > opts.count) lines.shift();
+          for (const line of lines) line.step();
         }
 
-        while (lines.length > opts.count) lines.shift();
-        for (const line of lines) line.step();
-      }
-
-      loop();
-    });
-  </script>
-</body>
+        loop();
+      });
+    </script>
+  </body>
 </html>
