@@ -60,8 +60,7 @@ header {
   flex-wrap: wrap;
 
   padding: 10px 3%;
-  backdrop-filter: blur(10px);
-  background: rgba(0,0,0,0.45);
+  background: rgba(0,0,0,0.75);
 }
 
 .logo {
@@ -143,9 +142,11 @@ nav a.is-active {
   padding: 34px 30px;
   border-radius: 28px;
 
-  background: rgba(255, 255, 255, 0.06);
+  /* white tint over a dark base: replaces the backdrop blur, which was
+     re-rendered on every canvas frame */
+  background: linear-gradient(rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.06)),
+    rgba(0, 0, 0, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(14px);
 
   box-shadow:
     0 18px 60px rgba(0, 0, 0, 0.55),
@@ -285,9 +286,9 @@ nav a.is-active {
   font-weight: 800;
   letter-spacing: 0.5px;
   color: white;
-  background: rgba(255, 255, 255, 0.06);
+  background: linear-gradient(rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.06)),
+    rgba(0, 0, 0, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.16);
-  backdrop-filter: blur(10px);
   box-shadow:
     0 10px 30px rgba(0, 0, 0, 0.55),
     0 0 18px rgba(0, 170, 255, 0.22),
@@ -321,8 +322,7 @@ nav a.is-active {
   padding: 12px 14px;
   border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(8px);
+  background: rgba(30, 30, 34, 0.7);
   text-align: center;
   font-size: 1.2rem;
   line-height: 1.2;
@@ -366,9 +366,8 @@ nav a.is-active {
   min-width: 320px;
   padding: 22px;
   border-radius: 22px;
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(30, 30, 34, 0.7);
   border: 1px solid rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(10px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
   scroll-snap-align: start;
 }
@@ -405,9 +404,8 @@ nav a.is-active {
   width: min(900px, 92vw);
   padding: 24px;
   border-radius: 22px;
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(30, 30, 34, 0.7);
   border: 1px solid rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(10px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
   text-align: center;
 }

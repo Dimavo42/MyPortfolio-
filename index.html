@@ -39,12 +39,18 @@
           </div>
 
           <p class="subtitle">
-            I’m currently working as an <strong>Backend Developer with a fouces on TypeScript and NestJS framework</strong> at
-            <strong>Matrix Group</strong>, in
-            <strong>Mizrahi-Tefahot Bank</strong>. I specialize in building
-            infrastructure for scalable web applications foucesly in TypeScript and NestJS.
-            Currently, working inside the infrastructure team  and I’m actively
-            seeking a <strong>Software Developer</strong> opportunity.
+            Software developer with <strong>3.5 years</strong> of hands-on
+            experience. Over the past year, I have built distributed,
+            microservices-based systems in production using
+            <strong>NestJS, Node.js and TypeScript</strong>, with event-driven
+            messaging over <strong>Kafka</strong>, caching in
+            <strong>Redis</strong>, and <strong>React</strong> on the frontend.
+            Before that, I spent 2.5 years building test automation frameworks
+            from scratch and leading a three-person automation team. My recent
+            focus is on integrating <strong>LLMs, MCP and AI agents</strong>
+            into the development workflow. Seeking a position as a
+            <strong>Full Stack Developer</strong> or
+            <strong>Automation Engineer</strong>.
           </p>
 
           <ul class="about-myself">
@@ -123,6 +129,60 @@
             <a
               class="project-link"
               href="https://github.com/Dimavo42/WebTradeTracker"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View on GitHub
+            </a>
+          </div>
+          <div class="project-card">
+            <div class="project-header">
+              <h1 class="project-title">DocuMind</h1>
+              <div class="project-tags">
+                <span class="tag">Java</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag">React</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Ollama</span>
+                <span class="tag">Docker</span>
+              </div>
+            </div>
+            <p class="project-desc">
+              Built a local AI document assistant that answers questions about
+              uploaded PDF, TXT and DOCX files using a RAG pipeline.
+              Implemented background text extraction and chunking, embeddings
+              with Ollama, vector similarity search in PostgreSQL with pgvector,
+              a Spring Boot REST API, a React frontend, and a Docker Compose
+              setup with Nginx.
+            </p>
+            <a
+              class="project-link"
+              href="https://github.com/Dimavo42/DocuMind"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View on GitHub
+            </a>
+          </div>
+          <div class="project-card">
+            <div class="project-header">
+              <h1 class="project-title">AIGenerator</h1>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Ollama</span>
+                <span class="tag">Shell</span>
+              </div>
+            </div>
+            <p class="project-desc">
+              Built a cross-platform launcher for running local AI models with
+              Ollama on Windows, macOS and Linux. Start-up scripts install
+              Ollama when missing, create a Python virtual environment, install
+              dependencies only when they change, and launch a Python desktop GUI.
+            </p>
+            <a
+              class="project-link"
+              href="https://github.com/Dimavo42/AIGenerator"
               target="_blank"
               rel="noreferrer"
             >
@@ -364,7 +424,6 @@
           color: "hsl(hue,100%,light%)",
           baseLight: 50,
           addedLight: 10,
-          shadowToTimePropMult: 6,
           baseLightInputMultiplier: 0.01,
           addedLightInputMultiplier: 0.02,
           cx: window.innerWidth / 2,
@@ -486,8 +545,7 @@
           const x = this.addedX * wave;
           const y = this.addedY * wave;
 
-          ctx.shadowBlur = prop * opts.shadowToTimePropMult;
-          ctx.fillStyle = ctx.shadowColor = this.color.replace(
+          ctx.fillStyle = this.color.replace(
             "light",
             opts.baseLight +
               opts.addedLight *
@@ -521,12 +579,10 @@
           }
         };
 
-        function loop() {
-          requestAnimationFrame(loop);
+        function update() {
           ++tick;
 
           ctx.globalCompositeOperation = "source-over";
-          ctx.shadowBlur = 0;
           ctx.fillStyle = `rgba(0,0,0,${opts.repaintAlpha})`;
           ctx.fillRect(0, 0, c.width, c.height);
 
@@ -547,7 +603,20 @@
           for (const line of lines) line.step();
         }
 
-        loop();
+        // Show ~30 frames per second (each one re-blurs the glass cards on top),
+        // but run two updates per frame so the lines keep their original speed.
+        const FRAME_MS = 1000 / 30;
+        let lastFrame = 0;
+
+        function loop(now) {
+          requestAnimationFrame(loop);
+          if (now - lastFrame < FRAME_MS - 2) return;
+          lastFrame = now;
+          update();
+          update();
+        }
+
+        requestAnimationFrame(loop);
       });
     </script>
   </body>
